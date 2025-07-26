@@ -1,0 +1,218 @@
+/* Google Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0e0e0e;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+header {
+  position: sticky;
+  top: 0;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #141414;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffae;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav a:hover {
+  color: #00ffae;
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00ffae;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.cta-button {
+  padding: 12px 30px;
+  background-color: #00ffae;
+  color: #0e0e0e;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #00e29d;
+}
+.about {
+  padding: 60px 10%;
+  background-color: #121212;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #00ffae;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1rem;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 10%;
+  background-color: #161616;
+  text-align: center;
+}
+
+.feature {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  padding: 20px 30px;
+  border-radius: 10px;
+  color: #ffffff;
+  min-width: 200px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  border-color: #00ffae;
+}
+.signup {
+  padding: 60px 10%;
+  background-color: #121212;
+  text-align: center;
+}
+
+.signup h2 {
+  font-size: 2rem;
+  color: #00ffae;
+  margin-bottom: 20px;
+}
+
+.signup form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.signup input[type="email"] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  width: 300px;
+  max-width: 90%;
+  outline: none;
+}
+
+.signup button {
+  padding: 12px 25px;
+  background-color: #00ffae;
+  color: #0e0e0e;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signup button:hover {
+  background-color: #00e29d;
+}
+footer {
+  background-color: #0d0d0d;
+  padding: 30px 10%;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+}
+
+footer a {
+  color: #00ffae;
+  margin: 0 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+section {
+  scroll-margin-top: 100px; /* adjust based on your header height */
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signup form {
+    flex-direction: column;
+  }
+
+  .signup input[type="email"],
+  .signup button {
+    width: 100%;
+    max-width: 400px;
+  }
+}
